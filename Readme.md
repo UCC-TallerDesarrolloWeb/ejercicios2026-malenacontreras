@@ -15,7 +15,7 @@
 ## Unidad 2: Fundamentos de HTML5 y CSS3
 
 ### HTML
--  [ ] Primer HTML
+-  [x] Primer HTML
 -  [ ] Secciones
 -  [ ] Títulos
 -  [ ] Listas
