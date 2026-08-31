@@ -1,5 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Moo+Lah+Lah&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-        .mainstyle{
+    /*estilo para el body*/    
+    .mainstyle{
             text-align: center;
             font-family: "Roboto Mono", monospace;
             background: linear-gradient(to top left,rgb(255, 129, 221),white);
