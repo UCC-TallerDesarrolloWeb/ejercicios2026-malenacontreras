@@ -1,0 +1,28 @@
+    @import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Moo+Lah+Lah&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        .mainstyle{
+            text-align: center;
+            font-family: "Roboto Mono", monospace;
+            background: linear-gradient(to top left,rgb(255, 129, 221),white);
+        }
+        div{
+            border: 10px ridge rgb(38, 0, 255);
+            margin: 15px;
+            padding:10px 25px 12px;
+            background-color: rgba(198, 239, 255, 0.5);
+            border-radius: 20px 100px 20px 20px;
+            box-shadow: 10px 8px rgb(255, 130, 172);
+        }
+        #user{
+            width:8%;
+            border-radius: 100%;
+            float: left;
+        }
+        h3{
+            font-family: "Roboto Mono", monospace;
+            font-size: 3rem;
+            text-shadow: 5px 3px  lightblue;
+        }
+        h1{
+            font-family: "Honk", system-ui;
+            font-size: 5em;
+        }
