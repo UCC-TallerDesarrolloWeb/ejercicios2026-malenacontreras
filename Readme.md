@@ -15,15 +15,15 @@
 ## Unidad 2: Fundamentos de HTML5 y CSS3
 
 ### HTML
--  [ ] Primer HTML
--  [ ] Secciones
--  [ ] Títulos
--  [ ] Listas
--  [ ] Link
--  [ ] Tablas I
--  [ ] Tablas II
--  [ ] Tablas III
--  [ ] Tablas VI
+-  [x] Primer HTML
+-  [X] Secciones
+-  [X] Títulos
+-  [X] Listas
+-  [X] Link
+-  [X] Tablas I
+-  [X] Tablas II
+-  [X] Tablas III
+-  [X] Tablas VI
 -  [ ] Comentarios
 -  [ ] Formulario
 -  [ ] Accesibilidad
