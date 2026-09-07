@@ -35,9 +35,9 @@
 -  [X] Estilo con Descendientes
 -  [X] Pseudo Clases
 -  [X] CV
--  [ ] Backgrounds
+-  [X] Backgrounds
 -  [ ] Position
--  [ ] 2 Columnas
+-  [X] 2 Columnas
 -  [ ] Grid
 -  [ ] grid-areas
 -  [ ] Mejora
