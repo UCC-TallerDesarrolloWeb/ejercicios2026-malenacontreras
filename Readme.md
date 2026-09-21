@@ -38,17 +38,17 @@
 -  [X] Backgrounds
 -  [ ] Position
 -  [X] 2 Columnas
--  [ ] Grid
--  [ ] grid-areas
--  [ ] Mejora
--  [ ] Transitions
--  [ ] Viewport
--  [ ] Responsive
+-  [X] Grid
+-  [X] grid-areas
+-  [X] Mejora
+-  [X] Transitions
+-  [X] Viewport
+-  [X] Responsive
 
 ## Unidad 3: JavaScript y ES6+
 
--  [ ] Hola Mundo!
--  [ ] Conversor de Unidades
+-  [X] Hola Mundo!
+-  [X] Conversor de Unidades
 -  [ ] Documentación
 -  [ ] Grados a Radianes
 -  [ ] Refactorización
