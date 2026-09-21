@@ -1,9 +1,8 @@
 /**
- * Descripción: Convierte distintas unidades de medida a partir de un valor ingresado.
+ * Convierte distintas unidades de medida a partir de un valor ingresado.
  * @method convertirUnidades
  * @param {string} id - El identificador del input modificado.
  * @param {number|string} valor - El valor ingresado que se desea convertir.
- * @return void
  */
 function convertirUnidades(id, valor) {
     // Si se ingresa una coma, la cambiamos a punto para que JavaScript pueda hacer la matemática
@@ -35,4 +34,26 @@ function convertirUnidades(id, valor) {
         document.getElementById("pulgada").value = valor * 36;
         document.getElementById("pie").value = valor * 3;
     }
+}
+
+/**
+ * conversion de grados a radianes
+ * @method convertirGR
+ * @param {string} id - El identificador del input modificado.
+ */
+function convertirGR(id){
+    let grad, rad;
+
+    if(id=="grados"){
+        grad=document.getElementById("grados").value;
+        rad = grad*Math.PI/180;
+    }else{
+        rad = document.getElementById("radianes").value;
+
+        grad = rad*180/Math.PI;
+
+    }
+    document.getElementById("grados").value=grad;
+    document.getElementById("radianes").value=rad;
+
 }
