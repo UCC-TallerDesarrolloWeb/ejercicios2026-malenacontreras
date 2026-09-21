@@ -4,10 +4,10 @@
  * @param {string} id - El identificador del input modificado.
  * @param {number|string} valor - El valor ingresado que se desea convertir.
  */
-convertirUnidades = (id, valor) => {
+function convertirUnidades(id, valor) {
     let metros, pulgadas, pie, yardas;
 
-    if (isNaN(valor)) { // me devuelve si es numérico o no
+    if (isNaN(valor)) { 
         alert("Se ingresó un valor incorrecto: " + id);
         metros = "";
         pulgadas = "";
@@ -34,13 +34,11 @@ convertirUnidades = (id, valor) => {
         pulgadas = valor * 36;
         pie = valor * 3;
     }
-    document.getElementById("metro").value=metros;
-    document.getElementById("pulgada").value=pulgadas;
-    document.getElementById("pies").value=pie;
-    document.getElementById("yardas").value=yardas;
-
-
-
+    
+    document.getElementById("metro").value = metros;
+    document.getElementById("pulgada").value = pulgadas;
+    document.getElementById("pie").value = pie;
+    document.getElementById("yarda").value = yardas;
 }
 
 /**
@@ -48,19 +46,30 @@ convertirUnidades = (id, valor) => {
  * @method convertirGR
  * @param {string} id - El identificador del input modificado.
  */
-function convertirGR(id){
+function convertirGR(id) {
     let grad, rad;
 
-    if(id=="grados"){
-        grad=document.getElementById("grados").value;
-        rad = grad*Math.PI/180;
-    }else{
+    if (id == "grados") {
+        grad = document.getElementById("grados").value;
+        rad = grad * Math.PI / 180;
+    } else {
         rad = document.getElementById("radianes").value;
-
-        grad = rad*180/Math.PI;
-
+        grad = rad * 180 / Math.PI;
     }
-    document.getElementById("grados").value=grad;
-    document.getElementById("radianes").value=rad;
+    
+    document.getElementById("grados").value = grad;
+    document.getElementById("radianes").value = rad;
+}
 
+/**
+ * mostrar u ocultar div
+ * @method mostrarOcultar
+ * @param {string} valor - valor del input
+ */
+function mostrarOcultar(valor) {
+    if (valor == "val_mostrar") {
+        document.getElementById("unDiv").style.display = 'block';
+    } else {
+        document.getElementById("unDiv").style.display = 'none';
+    }
 }

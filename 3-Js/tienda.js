@@ -61,3 +61,21 @@ const productos = [
     imagen: "protectores-manos.webp",
   },
 ];
+/**
+ * Abre el diálogo y carga el nombre y la descripción del producto.
+ * @method abrirDialogo
+ * @param {number} indice - La posición del producto dentro del arreglo.
+ */
+function abrirDialogo(indice) {
+    document.getElementById("nombre").innerHTML = productos[indice].nombre;
+    document.getElementById("descripcion").innerHTML = productos[indice].description;
+    document.getElementById("dialogo").showModal();
+}
+
+/**
+ * Cierra el diálogo de detalles del producto.
+ * @method cerrarDialogo
+ */
+function cerrarDialogo() {
+    document.getElementById("dialogo").close();
+}
