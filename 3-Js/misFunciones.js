@@ -73,3 +73,49 @@ function mostrarOcultar(valor) {
         document.getElementById("unDiv").style.display = 'none';
     }
 }
+/**
+ * Suma dos valores ingresados por el usuario.
+ * @method sumar
+ */
+function sumar() {
+    let num1 = Number(document.getElementById("nums1").value);
+    let num2 = Number(document.getElementById("nums2").value);
+    document.getElementById("totalS").value = num1 + num2;
+}
+
+/**
+ * Resta dos valores ingresados por el usuario.
+ * @method restar
+ */
+function restar() {
+    let num1 = Number(document.getElementById("numr1").value);
+    let num2 = Number(document.getElementById("numr2").value);
+    document.getElementById("totalR").value = num1 - num2;
+}
+
+/**
+ * Multiplica dos valores ingresados por el usuario.
+ * @method multiplicar
+ */
+function multiplicar() {
+    let num1 = Number(document.getElementById("numm1").value);
+    let num2 = Number(document.getElementById("numm2").value);
+    document.getElementById("totalM").value = num1 * num2;
+}
+
+/**
+ * Divide dos valores ingresados por el usuario.
+ * @method dividir
+ */
+function dividir() {
+    let num1 = Number(document.getElementById("numd1").value);
+    let num2 = Number(document.getElementById("numd2").value);
+    
+    // Pequeña validación por si intentan dividir por cero
+    if (num2 === 0) {
+        alert("No se puede dividir por cero");
+        document.getElementById("totalD").value = "";
+    } else {
+        document.getElementById("totalD").value = num1 / num2;
+    }
+}
