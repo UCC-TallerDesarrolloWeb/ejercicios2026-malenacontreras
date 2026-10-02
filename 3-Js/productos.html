@@ -5,7 +5,7 @@
         <link href="catalogo.css" type="text/css" rel="stylesheet">
         <script type="text/javascript" src="tienda.js"></script>
     </head>
-    <body onload="cargarProductos()">
+    <body onload="cargarProductos(); contarProductos()">
         <div class="grid-container">
             <header class="item1">
                 Catalogo productos
@@ -14,6 +14,7 @@
             <nav class="item2">
                 <a href="productos.html">Catalogo de productos</a>
                 <a href="carrito.html">Carrito de compras</a>
+                <div id="cp-prod">0</div>
             </nav>
             
             <aside class="item3">
@@ -54,6 +55,15 @@
                             <input type="checkbox" id="dobok" name="tipo " value="dobok" onchange="filtrarProductos()">
                             <label for="dobok">dobok</label>
                         </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Orden</legend>
+                        <select id="order" onchange="ordenarCatalogo()">
+                            <option value="menor">Menor a mayor</option>
+                            <option value="mayor">Mayor a menor</option>
+                            <option value="a-z">A - Z</option>
+                            <option value="z-a">Z - A</option>
+                        </select>
                     </fieldset>
                 </form>
             </aside>

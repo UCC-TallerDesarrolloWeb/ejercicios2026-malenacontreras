@@ -60,3 +60,17 @@ a:hover{
     background-color: var(--color--secundario);
     padding:7px;
 }
+#cant-productos {
+    background-color: var(--color-principal); 
+    color: white; 
+    display: inline;
+    border-radius: 50%;
+    padding: 7px;
+}
+#cp-prod {
+    background-color: var(--color-principal); 
+    color: white; 
+    display: inline;
+    border-radius: 50%;
+    padding: 7px;
+}
