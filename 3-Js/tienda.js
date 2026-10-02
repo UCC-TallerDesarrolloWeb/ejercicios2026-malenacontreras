@@ -72,6 +72,7 @@ const cargarProductos = () => {
                 <h3>${elemento.nombre}</h3>
                 <p>$${elemento.precio}</p>
                 <button onclick="abrirDialogo(${indice})">Ver detalle del producto</button>
+                <button type="button" onclick="agregarCarrito(${indice})">Agregar al carrito</button>
             </div>
         `;
     });
@@ -88,3 +89,37 @@ function abrirDialogo(indice) {
 function cerrarDialogo() {
     document.getElementById("dialogo").close();
 }
+
+let agregarCarrito = (id) => {
+    let carritoList = localStorage.getItem("carrito");
+    
+    if (carritoList === null) {
+        carritoList = [];
+    } else {
+        carritoList = JSON.parse(carritoList);
+    }
+    
+    carritoList.push(id);
+    localStorage.setItem("carrito", JSON.stringify(carritoList));
+};
+
+let cargarCarrito = () => {
+    let carritoList = localStorage.getItem("carrito");
+    let contenido = "";
+
+    if (carritoList == null) {
+        contenido = `<div>su carrito está vacío</div>`;
+    } else {
+        carritoList = JSON.parse(carritoList);
+        carritoList.forEach((num) => {
+            contenido += `
+                <div>
+                    <h3>${productos[num].nombre}</h3>
+                    <p>${productos[num].precio}</p>
+                </div>
+            `;
+        });
+    }
+
+    document.getElementById("mostrar-carrito").innerHTML = contenido;
+};
