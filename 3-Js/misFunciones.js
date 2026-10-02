@@ -77,7 +77,7 @@ function mostrarOcultar(valor) {
 function sumar() {
     let num1 = Number(document.getElementById("nums1").value);
     let num2 = Number(document.getElementById("nums2").value);
-    document.getElementById("totalS").value = num1 + num2;
+    document.getElementById("totalS").innerHTML = num1 + num2; 
 }
 
 /**
@@ -87,7 +87,7 @@ function sumar() {
 function restar() {
     let num1 = Number(document.getElementById("numr1").value);
     let num2 = Number(document.getElementById("numr2").value);
-    document.getElementById("totalR").value = num1 - num2;
+    document.getElementById("totalR").innerHTML = num1 - num2;
 }
 
 /**
@@ -97,7 +97,7 @@ function restar() {
 function multiplicar() {
     let num1 = Number(document.getElementById("numm1").value);
     let num2 = Number(document.getElementById("numm2").value);
-    document.getElementById("totalM").value = num1 * num2;
+    document.getElementById("totalM").innerHTML = num1 * num2;
 }
 
 /**
@@ -108,11 +108,10 @@ function dividir() {
     let num1 = Number(document.getElementById("numd1").value);
     let num2 = Number(document.getElementById("numd2").value);
     
-    // Pequeña validación por si intentan dividir por cero
     if (num2 === 0) {
         alert("No se puede dividir por cero");
-        document.getElementById("totalD").value = "";
+        document.getElementById("totalD").innerHTML = "";
     } else {
-        document.getElementById("totalD").value = num1 / num2;
+        document.getElementById("totalD").innerHTML = num1 / num2;
     }
 }
