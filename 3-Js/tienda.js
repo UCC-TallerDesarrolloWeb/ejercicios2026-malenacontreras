@@ -58,24 +58,33 @@ const productos = [
     talle: ["XXS", "XS", "S", "M", "L", "XL"],
     precio: 35000,
     web: "https://www.daedo.com/collections/collection-itf-gloves/products/pritf-2022",
-    imagen: "protectores-manos.webp",
+    imagen: "protectores-pie.webp", 
   },
 ];
-/**
- * Abre el diálogo y carga el nombre y la descripción del producto.
- * @method abrirDialogo
- * @param {number} indice - La posición del producto dentro del arreglo.
- */
+
+const cargarProductos = () => {
+    let contenido = "";
+
+    productos.forEach((elemento, indice) => {
+        contenido += `
+            <div>
+                <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/${elemento.imagen}" alt="${elemento.nombre}">
+                <h3>${elemento.nombre}</h3>
+                <p>$${elemento.precio}</p>
+                <button onclick="abrirDialogo(${indice})">Ver detalle del producto</button>
+            </div>
+        `;
+    });
+
+    document.getElementById("mostrar-catalogo").innerHTML = contenido;
+};
+
 function abrirDialogo(indice) {
     document.getElementById("nombre").innerHTML = productos[indice].nombre;
     document.getElementById("descripcion").innerHTML = productos[indice].description;
     document.getElementById("dialogo").showModal();
 }
 
-/**
- * Cierra el diálogo de detalles del producto.
- * @method cerrarDialogo
- */
 function cerrarDialogo() {
     document.getElementById("dialogo").close();
 }

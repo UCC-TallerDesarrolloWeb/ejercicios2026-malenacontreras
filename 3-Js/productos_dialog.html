@@ -5,7 +5,7 @@
         <link href="catalogo.css" type="text/css" rel="stylesheet">
         <script type="text/javascript" src="tienda.js"></script>
     </head>
-    <body>
+    <body onload="cargarProductos()">
         <div class="grid-container">
             <header class="item1">
                 Catalogo productos
@@ -50,45 +50,15 @@
                 </form>
             </aside>
             
-            <main class="item4">
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/cabezal-cerrado.webp" alt="Cabezal cerrado">
-                    <h3>Cabezal cerrado</h3>
-                    <button onclick="abrirDialogo(0)">Ver detalle del producto</button>
-                </div>
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/dobok.webp" alt="DObok">
-                    <h3>Dobok</h3>
-                    <button onclick="abrirDialogo(1)">Ver detalle del producto</button>
-                </div>
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/escudo-potencia.webp" alt="Escudo potencia">
-                    <h3>Escudo potencia</h3>
-                    <button onclick="abrirDialogo(2)">Ver detalle del producto</button>
-                </div>
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/foco-con-dedos.webp" alt="Foco con dedos">
-                    <h3>Foco con dedos</h3>
-                    <button onclick="abrirDialogo(3)">Ver detalle del producto</button>
-                </div>
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/protectores-manos.webp" alt="Protectores manos">
-                    <h3>Protectores manos</h3>
-                    <button onclick="abrirDialogo(4)">Ver detalle del producto</button>
-                </div>
-                <div>
-                    <img src=" https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/protectores-pie.webp" alt="Protectores pie">
-                    <h3>Protectores pie</h3>
-                    <button onclick="abrirDialogo(5)">Ver detalle del producto</button>
-                </div>
-
-                <dialog id="dialogo">
-                    <h2>Detalle del Producto</h2>
-                    <h3 id="nombre"></h3>
-                    <p id="descripcion"></p>
-                    <button onclick="cerrarDialogo()">Cerrar</button>
-                </dialog>
+            <main class="item4" id="mostrar-catalogo">
             </main>
+
+            <dialog id="dialogo">
+                <h2>Detalle del Producto</h2>
+                <h3 id="nombre"></h3>
+                <p id="descripcion"></p>
+                <button onclick="cerrarDialogo()">Cerrar</button>
+            </dialog>
             
             <footer class="item5">
                 Contacto
