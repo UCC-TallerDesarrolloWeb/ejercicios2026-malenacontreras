@@ -80,8 +80,8 @@ const cargarProductos = () => {
 };
 
 function abrirDialogo(indice) {
-    document.getElementById("nombre").innerHTML = productos[indice].nombre;
-    document.getElementById("descripcion").innerHTML = productos[indice].description;
+    document.getElementById("titulo-producto").innerText = productos[indice].nombre;
+    document.getElementById("descripcion-producto").innerText = productos[indice].description;
     document.getElementById("dialogo").showModal();
 }
 
