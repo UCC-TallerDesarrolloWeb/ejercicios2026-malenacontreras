@@ -67,8 +67,8 @@
 -  [X] Ordenar el catálogo
 
 ## Unidad 4: Funcionamiento del Navegador y Herramientas de Desarrollo
--  [ ] Checkeo de accesiilidad: AXE
--  [ ] Checkeo de Lighthouse: accesibilidad, CEO, performance, buenas prácticas
+-  [X] Checkeo de accesiilidad: AXE
+-  [X] Checkeo de Lighthouse: accesibilidad, CEO, performance, buenas prácticas
 
 ## Unidad 5: Frameworks y Preprocesadores CSS
 
